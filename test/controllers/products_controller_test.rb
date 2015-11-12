@@ -52,4 +52,23 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+
+  test "should show index" do
+    get :index
+    assert_response :success
+    assert_select 'tr', 3
+    assert_select '.list_description', 3
+    assert_select '.list_actions' do |element|
+      assert_select element, 'a', 9
+    end
+  end
+
+  test 'shouldgi create product' do
+    post :create, product: @update
+    assert_response :redirect
+
+    get :index
+    assert_response :success
+    assert_select 'tr', 4
+  end
 end

@@ -19,6 +19,10 @@
                 <li><a href="">News</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <span>Rendered at:</span>
+            <div id="time">
+                <%= Time.now.to_formatted_s(:short)  %>
+            </div>
         </div>
     </div>
 

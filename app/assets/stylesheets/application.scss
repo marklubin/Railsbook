@@ -45,6 +45,7 @@
   padding: 1em 2em;
   width: 13em;
   background: #141;
+  height: 500px;
 
   ul {
     padding: 0;
@@ -64,5 +65,18 @@
 
       }
     }
+  }
+
+  span {
+    color: #bfb;
+  }
+
+  #time {
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #aaa;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3em;
   }
 }
