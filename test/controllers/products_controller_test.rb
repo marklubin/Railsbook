@@ -64,7 +64,7 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
 
-  test 'should create product' do
+  test 'should create display product' do
     post :create, product: @update
     assert_response :redirect
 

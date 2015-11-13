@@ -41,6 +41,10 @@
     margin-bottom: 0.8em;
   }
 
+  form {
+    display: inline;
+  }
+
   .price_line {
     text-align: right;
   }
@@ -48,5 +52,13 @@
     color: #44a;
     font-weight: bold;
     margin-right: 50px;
+  }
+
+  .views {
+    margin-top: 10px;
+    background-color: #666;
+    width: 50%;
+    text-align: center;
+    color: whitesmoke;
   }
 }
